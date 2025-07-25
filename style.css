@@ -32,6 +32,7 @@
 
 /* shared item */
 
+
 .dark-0{
     color: #000000;
 }
@@ -47,7 +48,4 @@
     width: 186px;
     height: 50px;
     background-color: rgb(233, 90, 8);   
-}
-main > section{
-    margin-top: 120px;
 }
