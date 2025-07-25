@@ -1,11 +1,12 @@
 
 
- /* shared front */
+ /* ---------------------- shared front */
 
  
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-        /*Noto Serif  */
+             /*-------Noto Serif-------- */
+
         .noto-serif-normal{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -16,7 +17,8 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-                /* inter */
+                /* -----inter ------*/
+
 .inter-normal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -30,7 +32,7 @@
 
 
 
-/* shared item */
+/* -----shared items----- */
 
 
 .dark-0{
@@ -48,4 +50,137 @@
     width: 186px;
     height: 50px;
     background-color: rgb(233, 90, 8);   
+}
+
+/*----------responsive design for smart phone----------------- */
+
+@media screen and (max-width: 576px){
+    
+/*-------------- Header section --------------- */
+    
+    main, footer{
+        margin-left: 25px;
+    }  
+    .main-header{
+        margin-left: 10px;
+    }
+    
+    .first{
+            flex-direction: column-reverse;
+        }
+        .list-container{
+            gap: -12
+        }
+        .list{
+            display: none;
+        }
+        .head-title{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .head-details{
+            font-size: 14px;
+        }
+        .head-img{
+            margin-top: -200px;
+        }
+
+    /*-------------------1st section----------------- */
+
+        .box-title{
+            font-size: 24px;
+            font-weight: 700;
+            
+        }
+        .box-descrip{
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        .first-section{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+
+        }
+        .btn{
+            width: 171px;
+            height: 50px;
+        }
+        .container{
+            width: 171px;
+            height: 340.5px;
+        }
+
+/* ------------------2nd section-------------------*/
+
+        .deals-title{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .deals-details{
+            font-size: 14px;
+        }
+        .second{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .batch{
+            display: none;
+        }
+        .flower-img{
+            width: 358px;
+            height: 396px;
+            margin-top: 100px;
+        }
+        .flower-title{
+            font-size: 24px;
+            margin-top: 0%;
+        }
+        .flower-descrip{
+            font-size: 14px;
+             margin-bottom: 30px;
+            width: 361px;
+           height: 51px;
+        }
+        .flower-descrip span{
+            margin-left: 0px;
+        }
+
+/*----------------------3rd section-------------------- */
+
+        .deals-container{
+            margin-top: 220px;
+        }
+        .third{
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .first-bg, .second-bg, .third-bg{
+            width: auto;
+            height:  203px;
+            margin-right: 20px;
+        }
+
+/* ------------------4th section------------------------*/
+
+        .fourth{
+           width: auto ;
+        }
+        .fourth input{
+            width: 218px;
+        }
+        .second-btn{
+            width: 103px;
+        }
+        .title{
+            
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+/* ----------------------footer section------------------------- */
+
+        footer{
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 30px;
+        }
 }
